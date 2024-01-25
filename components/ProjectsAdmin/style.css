@@ -1,0 +1,122 @@
+.picture {
+    height: 160px;
+    width: 250px;
+  }
+  
+.title {
+font-size: 25px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.id {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.title:link {
+text-decoration: none;
+color: white;
+}
+
+.title:visited {
+text-decoration: none;
+color: white;
+}
+
+.title:hover {
+text-decoration: underline;
+color: white;
+}
+
+.title:active {
+text-decoration: underline;
+color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    font-size: 3rem;
+    color: #ffffff;
+    box-shadow:
+      rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+      rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+.card:hover {
+box-shadow:
+    rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+transform: translateY(-3px) scale(1.1);
+}
+
+.basic-grid {
+display: grid;
+gap: 1rem;
+grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.modif {
+  background-color: #43d23e;
+}
+
+.supr {
+  background-color: rgb(194, 17, 17);
+}
+
+
+.bouton {
+  appearance: none;
+  
+  border: 2px solid #1A1A1A;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 75%;
+  will-change: transform;
+  
+}
+
+
+.bouton:disabled {
+  pointer-events: none;
+}
+
+.bouton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.bouton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

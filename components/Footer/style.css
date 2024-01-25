@@ -1,0 +1,39 @@
+
+.copyright {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+  }
+
+.footer {
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding:20px;
+    
+}
+
+.linkfoot {
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.linkfoot-pages {
+    text-align: center;
+    padding: 20px;
+}
+
+.linkfoot-medias {
+    text-align: center;
+    padding: 20px;
+}
