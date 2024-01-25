@@ -25,7 +25,7 @@ export default function ModifyProjectPage({ params }: { params: { id: string } }
 
 
 
-    const handleChangeSubmit = event => {
+    const handleChangeSubmit = (event: { preventDefault: () => void }) => {
         console.log('handleChangeSubmit')
         event.preventDefault()
 
@@ -35,8 +35,18 @@ export default function ModifyProjectPage({ params }: { params: { id: string } }
         console.log('picture : ', picture)
         console.log('date : ', date)
         console.log('enabled : ', enabled)
+        
+        const props = {
+            id: id,
+            title: title,
+            desc: desc,
+            picture: picture,
+            date: date,
+            enabled: enabled
+        }
 
-        ChangeProject({id, title, desc, picture, date, enabled})
+
+        ChangeProject(props)
         router.push('/')
  
     }

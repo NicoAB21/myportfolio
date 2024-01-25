@@ -1,8 +1,8 @@
 import { sql } from "@vercel/postgres"
-import { createTableProject, createTableUser, insertElement, fetchUsers } from '@/lib/seed'
+import { createTableProject, createTableUser, fetchUsers } from '@/lib/seed'
 
 
-export const AddUser = async (props) => { 
+export const AddUser = async (props: { firstname: any; lastname: any; email: any; phone: any; address: any ; city: any; country: any; birth_date: any; image: any }) => { 
     console.log(props)
     await sql`
     INSERT INTO me (firstname, lastname, email, phone, address, city, country, birth_date, image)
@@ -12,7 +12,7 @@ export const AddUser = async (props) => {
    }
 
 
-export const AddProject = async (props) => {
+export const AddProject = async (props: { title: any; desc: any; picture: any; date: any; enabled: any; }) => {
     console.log(props)
     await sql`
     INSERT INTO projects (title, description, picture, date_created, date_update, enabled)

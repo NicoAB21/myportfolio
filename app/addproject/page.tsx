@@ -25,7 +25,7 @@ export default function PageAddProject() {
     const [enabled, setEnabled] = useState(true)
 
 
-    const handleAddSubmit = event => {
+    const handleAddSubmit = (event: { preventDefault: () => void }) => {
         console.log('handleSubmit')
         event.preventDefault()
 

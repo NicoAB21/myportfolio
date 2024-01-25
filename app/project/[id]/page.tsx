@@ -10,7 +10,7 @@ export const dynamic = 'force-dynamic'
 
 export default async function ProjectPage({ params }: { params: { id: string } }) {
 
-    let data = await fetchProject(params.id)
+    let data = await fetchProject(Number(params.id))
     const {rows: project} = data
     console.log(project)
 

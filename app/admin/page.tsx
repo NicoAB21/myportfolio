@@ -4,7 +4,7 @@ import { AddProject } from "@/lib/add"
 import { RemoveProject } from "@/lib/remove"
 import { ChangeProject } from "@/lib/change"
 
-import { createTableProject, createTableUser, insertElement } from "@/lib/seed"
+import { createTableProject, createTableUser} from "@/lib/seed"
 
 import ProjAdmin from "@/components/ProjectsAdmin/projects"
 import Navbar from "@/components/Navbar/Navbar"
